@@ -41,6 +41,7 @@ nav ul{
 }
 .hero-section .Container {
 padding: 48px 0;
+background: linear-gradient(0deg, #00C19D 0%, #020043 47%);
 }
 
 .testimonial-section{
@@ -98,6 +99,106 @@ align-items: center;
 .userInfo h1{
   font-weight: 600;
 }
+
+/* we offer section  */
+
+.offer-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: #FBFBFB;
+  border: 0.5px solid rgba(2, 0, 67, 0.61);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+}
+
+.large {
+  grid-row: span 12;
+  max-height: 322px;
+}
+
+.medium {
+  grid-row: span 8;
+  max-height: 190px;
+  background-color: #FFFFF5;
+}
+.medium img{
+  margin-top: -15px;
+}
+
+.small {
+  grid-row: span 8;
+  max-height: 162px;
+  margin-top: 28px;
+}
+.small h2{
+display:  flex;
+justify-content: center;
+align-items: center;
+gap: 2;
+
+}
+.small h2 span{
+  font-size: 30px;
+  
+  }
+.small img{
+ width: 72px;
+}
+
+.title {
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -32px;
+}
+
+.card h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card img {
+  align-self: center;
+  max-width: 130px;
+  max-height: 130px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-wrapper img {
+  max-width: 72px;
+  max-height: 65px;
+  margin-bottom: 4px;
+}
+
+.mt-7 {
+  margin-top: 28px;
+}
+
 
 
 /* serveice section  */
@@ -208,16 +309,19 @@ color: white;
   padding: 12px 24px; 
   border: 1px solid #000;
   border-radius: 20px; 
+  margin-bottom: 16px;
 }
 
 .info-part h2 {
-  font-size: 26px; 
-  line-height: 1.25;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .info-part p {
   font-size: 16px; 
   line-height: 1.5;
+  margin-bottom: 16px;
 }
 
 .image-part {
@@ -239,7 +343,7 @@ width: 50%;
   opacity: 90%;
   border-radius: 20px;
   padding: 24px;
-  bottom: -50px;
+  bottom: 15px;
   left: -60px;
   width: 70%;
   color: white;
@@ -253,4 +357,45 @@ margin-bottom: 16px;
   padding:  12px 16px 12px 24px;
   background: #FFC637;
   border-radius:12px;
+}
+
+
+
+/* discount section  */
+
+.discount-section{
+  background:linear-gradient(270deg, #00c19e00 0%, #020043bd 47%),url('/image/Rectangle\ 32.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 477px;
+  border-radius: 32px;
+  margin: 100px auto;
+  display: flex ;
+  justify-content: space-between;
+}
+.discount-section .discrount-info{
+width: 40%;
+}
+.discount-section .discrount-info h1{
+color: white;
+font-size: 40px;
+font-weight: 600;
+margin-bottom: 16px;
+ 
+}
+.discount-section .discrount-info .button1{
+  padding:  12px 16px 12px 24px;
+  background: #FFC637 ;
+  border-radius: 12px;
+ 
+}
+.discount-section .discrount-info .button2{
+  padding:  12px 16px 12px 24px;
+  border-radius: 12px;
+  border: 1px solid #FFFFF5;
+  color: white;
+ 
+}
+.discount-section .logo{
+width: 125px;
 }
