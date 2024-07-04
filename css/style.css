@@ -72,6 +72,8 @@ background: linear-gradient(0deg, #00C19D 0%, #020043 47%);
   background-blend-mode: darken;
   padding-bottom: 48px;
 }
+
+/* -----testimonial */
 .testimonial-section button{
  padding: 10px 24px;
  border-radius: 32px;
@@ -366,7 +368,7 @@ width: 50%;
   border-radius: 32px;
   border: 1px solid #343268;
   padding: 24px;
-  bottom: 0px;
+  bottom: -30px;
   left: -60px;
   width: 70%;
   color: white;
@@ -384,7 +386,7 @@ margin-bottom: 16px;
 /* discount section  */
 
 .discount-section{
-  background:linear-gradient(270deg, #00c19e00 0%, #020043bd 47%),url('./image/Rectangle32.png');
+  background:linear-gradient(270deg, #00c19e00 0%, #020043bd 47%),url('/image/Rectangle32.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 477px;
@@ -467,6 +469,8 @@ width: 125px;
 
 .social-icons {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 4px;
   margin-top: 8px;
 }
@@ -495,3 +499,217 @@ width: 125px;
 
 
 
+
+/* mobile responsive  */
+
+
+@media screen and (max-width: 768px) {
+
+  .Container {
+    max-width: 1720px;
+    width: 95%;
+    margin:0 auto;
+    }
+    
+
+.Header{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+
+}
+.offer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.about-dis{
+  position: absolute;
+  background: #343268;
+  gap:8px;
+  opacity: 90%;
+  border-radius: 32px;
+  border: 1px solid #343268;
+  padding: 24px;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+ 
+}
+  
+.info-part  {
+  width: 100%;
+ margin-bottom: 16px; 
+}
+
+
+/* service  */
+.service-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.serive-conatent {
+ border-radius: 30px;
+ position: relative;
+}
+.serive-conatent img{
+ border-radius: 30px;
+ width: 100%;
+ object-fit: cover;
+}
+
+.serive-conatent button{
+ padding: 10px 24px;
+ font-size: 16px;
+ color: #4D4C7B;
+ border: 1px solid #4D4C7B;
+ border-radius: 32px;
+}
+.service-info button{
+  padding:  12px 16px 12px 24px;
+  background: #FFC637;
+  border-radius:12px;
+  margin-top: 24px;
+}
+.service-info {
+  margin-top: 0; 
+}
+.service-info h2{
+  font-weight: 600;
+  font-size: 28px;
+  color:#020043;
+}
+.service-info p{
+  font-size: 16px;
+  color:#4D4C7B;
+}
+.service-discription {
+position: absolute;
+background: #020043;
+display: flex;
+justify-content: space-between;
+gap:8px;
+opacity: 60%;
+border-radius: 20px;
+padding: 24px;
+bottom: 0;
+left: 0;
+width: 100%;
+color: white;
+
+}
+.service-discription h1{
+ font-weight: 600;
+ font-size: 20px;
+ margin-bottom: 16px;
+}
+.arrow-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.arrow-icon .circle {
+  background-color: #D97706; 
+  height: 40px; 
+  width: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; 
+}
+
+.arrow-icon img {
+  width: 80%;
+  margin: 12px; 
+}
+
+
+.discount-section .discrount-info{
+  width: 100%;
+  }
+.discount-section{
+    background-position: right;
+    height: 477px;
+    border-radius: 32px;
+    margin: 100px auto;
+    display: flex ;
+    justify-content: space-between;
+  }
+
+
+.footer-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  /* offer sevtion  */
+  .title h2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -32px;
+  }
+  
+  .info-part .btn1 {
+    border-radius: 22px;
+    margin-top: 64px;
+  }
+  
+  .large {
+  grid-row: span 12;
+  max-height:  180px;
+}
+
+.medium {
+  grid-row: span 8;
+  max-height:  180px;
+  background-color: #FFFFF5;
+}
+
+
+.small {
+  grid-row: span 8;
+  max-height: 180px;
+  margin-top: 28px;
+}
+.card img{
+  width: 50px;
+ }
+ /* about us */
+ .info-part h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* service  */
+.service-section{
+margin-top: 60px;
+}
+
+.testimonial-section{
+  margin-top: 60px;
+}
+.testimonial-title h2{
+
+  font-size: 28px;
+  
+ }
+}
