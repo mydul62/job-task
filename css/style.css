@@ -13,6 +13,7 @@ display: block;
 }
 body{
   font-family: "Inter", sans-serif;
+  background-color: #E1F5FF;
 }
 .appointment-button img{
  height: 9px;
@@ -28,7 +29,6 @@ body{
   gap: 6px;
   font-weight: 600; 
 }
-
 
 .Container {
 max-width: 1720px;
@@ -62,11 +62,16 @@ nav ul{
   
 }
 .hero-section .Container {
-padding: 48px 0;
+
 background: linear-gradient(0deg, #00C19D 0%, #020043 47%);
 }
 
-
+.h-section {
+  background-position: left bottom;
+  background-repeat:repeat;
+  background-blend-mode: darken;
+  padding-bottom: 48px;
+}
 .testimonial-section button{
  padding: 10px 24px;
  border-radius: 32px;
@@ -113,9 +118,7 @@ align-items: center;
   height: 44px;
   flex-shrink: 0;
 }
-.userInfo {
 
-}
 .userInfo h1{
   font-weight: 600;
 }
@@ -201,7 +204,7 @@ gap: 2;
   max-height: 130px;
 }
 
-.image-wrapper {
+.image-wrapper{
   display: flex;
   justify-content: flex-end;
 }
@@ -225,6 +228,7 @@ gap: 2;
   grid-template-rows: 1fr 1fr;
   column-gap: 20px;
   row-gap: 40px;
+  border-radius: 32px;
   background-color: #FFFFF5;
   padding: 24px;
   margin: 100px auto;
@@ -326,7 +330,6 @@ color: white;
 
 .info-part .btn1 {
   border-radius: 22px;
-  margin-bottom: 24px;
 }
 .info-part .btn2{
   background: #FFC637;
@@ -335,13 +338,12 @@ color: white;
 .info-part h2 {
   font-size: 36px;
   font-weight: 600;
-  margin-bottom: 24px;
 }
 
 .info-part p {
   font-size: 16px; 
   line-height: 1.5;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .image-part {
@@ -358,10 +360,11 @@ width: 50%;
 }
 .about-dis{
   position: absolute;
-  background: #020043;
+  background: #343268;
   gap:8px;
   opacity: 90%;
-  border-radius: 20px;
+  border-radius: 32px;
+  border: 1px solid #343268;
   padding: 24px;
   bottom: 0px;
   left: -60px;
@@ -435,7 +438,8 @@ width: 125px;
   width: 125px;
 }
 
-.footer-content {
+.footer-content{
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
