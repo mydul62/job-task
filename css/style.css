@@ -384,7 +384,7 @@ margin-bottom: 16px;
 /* discount section  */
 
 .discount-section{
-  background:linear-gradient(270deg, #00c19e00 0%, #020043bd 47%),url('/image/Rectangle32.png');
+  background:linear-gradient(270deg, #00c19e00 0%, #020043bd 47%),url('./image/Rectangle32.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 477px;
